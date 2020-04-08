@@ -1,0 +1,17 @@
+<% include partials/header.ejs %>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label for="blogTitle">Title</label>
+    <textarea name="blogTitle" rows="1" cols="80" autocomplete="off" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="blogPost">Post</label>
+    <textarea name="blogPost" rows="5" cols="80" autocomplete="off" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Publish</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+  </div>
+</form>
+<% include partials/footer.ejs %>
